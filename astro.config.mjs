@@ -7,5 +7,6 @@ export default defineConfig({
     vite: {
         plugins: [tailwindcss()],
     },
-    site: 'https://ajmuzika.github.io'
+    site: 'https://ajmuzika.github.io',
+    base: 'portfolio',
 });
