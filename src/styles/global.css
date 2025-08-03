@@ -10,3 +10,7 @@ html {
     color: #FF6542;
     font-weight: 700;
 }
+
+a:not(li > a) {
+    text-decoration: underline;
+}
