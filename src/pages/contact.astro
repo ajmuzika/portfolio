@@ -1,0 +1,19 @@
+---
+
+import Layout from "../layouts/Layout.astro";
+import Placeholder from "../components/Placeholder.astro";---
+<Layout><Placeholder></Placeholder>
+    <main>
+        <h1 class="text-4xl">In the meanwhile, you can contact me at
+            <a class="emphasis" href="mailto:wong.anthonyjordan@gmail.com">wong.anthonyjordan@gmail.com</a></h1>
+    </main>
+</Layout>
+
+<style>
+    main {
+        padding-left: calc(var(--spacing) * 50);
+    }
+    a {
+        text-decoration: underline;
+    }
+</style>

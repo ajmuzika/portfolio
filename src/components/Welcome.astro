@@ -5,10 +5,10 @@ import '@fontsource/anonymous-pro/700-italic.css';
 ---
 <div>
     <div class="grid">
-        <h1 class="name-text text-7xl p-50 pb-5 text-white emphasis">Anthony Wong</h1>
-        <p class="subtext text-5xl pl-50 subcolor" >Software Engineer</p>
-        <p class="subtext2 text-5xl pl-50 pr-0 pt-20 text-white">
-            Hello! I am currently pursing my M.S. in Computer Science at University of California - Irvine.
+        <h1 class="name-text text-7xl p-50 pt-65 pb-5 emphasis">Anthony Wong</h1>
+        <p class="subtext text-5xl pl-50 subcolor">Software Engineer</p>
+        <p class="subtext2 text-5xl pl-50 pr-0 pt-5 text-white">
+            M.S. in Computer Science @ University of California - Irvine.
         </p>
 
     </div>
@@ -33,13 +33,12 @@ import '@fontsource/anonymous-pro/700-italic.css';
 
     .subcolor {
         color: white;
-        //font-style: italic;
     }
 
     button {
         border: none;
         margin-left: calc(var(--spacing) * 50);
-        margin-top: calc(var(--spacing) * 20);
+        margin-top: calc(var(--spacing) * 15);
     }
 </style>
 
@@ -53,13 +52,9 @@ import '@fontsource/anonymous-pro/700-italic.css';
 
     let settings = {type:'chars,words', charsClass:'char'}
 
-    let text = document.querySelector('.name-text');
-    let text2 = document.querySelector('.subtext');
-
     for (let x of [".name-text", ".subtext", ".subtext2"]) {
         let text = document.querySelector(x);
 
-        gsap.set(text, {opacity:1});
         let splitText = SplitText.create(text, settings);
         let chars = splitText.chars;
 
@@ -68,7 +63,7 @@ import '@fontsource/anonymous-pro/700-italic.css';
         }
 
         timeline.from(chars, {
-            duration: 1,
+            duration: .5,
             opacity: 0,
             scale: 0,
             y: 80,
